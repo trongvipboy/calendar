@@ -59,12 +59,17 @@
     <Compile Include="CongViecTrongNgay.Designer.cs">
       <DependentUpon>CongViecTrongNgay.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhSachCongViec.cs" />
     <Compile Include="Lich.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lich.Designer.cs">
       <DependentUpon>Lich.cs</DependentUpon>
     </Compile>
+    <Compile Include="MotCongViec.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CongViec.resx">
@@ -85,6 +90,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\LapLichCongViec.exe.config" />
+    <None Include="bin\Debug\LapLichCongViec.vshost.exe.config" />
+    <None Include="bin\Debug\LapLichCongViec.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +106,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\LapLichCongViec.vshost.exe" />
+    <Content Include="icon\xeplich.ico" />
+    <Content Include="obj\Debug\LapLichCongViec.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

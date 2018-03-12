@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LapLichCongViec
 {
-    class DanhSachCongViec
+    [Serializable]
+    public class DanhSachCongViec
     {
         private List<MotCongViec> listJob;
         public List<MotCongViec> ListJob

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CongViecTrongNgay));
             this.plListJob = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thêmViệcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,12 +65,14 @@
             this.thêmViệcToolStripMenuItem.Name = "thêmViệcToolStripMenuItem";
             this.thêmViệcToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.thêmViệcToolStripMenuItem.Text = "Thêm việc";
+            this.thêmViệcToolStripMenuItem.Click += new System.EventHandler(this.thêmViệcToolStripMenuItem_Click);
             // 
             // hômNayToolStripMenuItem
             // 
             this.hômNayToolStripMenuItem.Name = "hômNayToolStripMenuItem";
             this.hômNayToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.hômNayToolStripMenuItem.Text = "Hôm nay";
+            this.hômNayToolStripMenuItem.Click += new System.EventHandler(this.hômNayToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -90,6 +93,7 @@
             this.JobTomorrow.TabIndex = 2;
             this.JobTomorrow.Text = "Ngày sau";
             this.JobTomorrow.UseVisualStyleBackColor = true;
+            this.JobTomorrow.Click += new System.EventHandler(this.JobTomorrow_Click);
             // 
             // JobYesterday
             // 
@@ -99,6 +103,7 @@
             this.JobYesterday.TabIndex = 1;
             this.JobYesterday.Text = "Hôm trước";
             this.JobYesterday.UseVisualStyleBackColor = true;
+            this.JobYesterday.Click += new System.EventHandler(this.JobYesterday_Click);
             // 
             // dtpDateOfJob
             // 
@@ -106,6 +111,7 @@
             this.dtpDateOfJob.Name = "dtpDateOfJob";
             this.dtpDateOfJob.Size = new System.Drawing.Size(200, 20);
             this.dtpDateOfJob.TabIndex = 0;
+            this.dtpDateOfJob.ValueChanged += new System.EventHandler(this.dtpDateOfJob_ValueChanged);
             // 
             // CongViecTrongNgay
             // 
@@ -115,8 +121,11 @@
             this.Controls.Add(this.plListJob);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CongViecTrongNgay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Công việc trong ngày";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CongViecTrongNgay_FormClosed);
             this.Load += new System.EventHandler(this.CongViecTrongNgay_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

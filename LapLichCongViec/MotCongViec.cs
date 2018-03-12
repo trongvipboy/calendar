@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LapLichCongViec
 {
     [Serializable]
-    class MotCongViec
+    public class MotCongViec
     {
         private DateTime day;
         public DateTime Day
